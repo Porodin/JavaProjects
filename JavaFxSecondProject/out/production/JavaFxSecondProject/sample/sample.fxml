@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <StackPane layoutY="-1.0" prefHeight="114.0" prefWidth="323.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="113.0" stroke="BLACK" strokeType="INSIDE" width="323.0" />
+            <TextField fx:id="textField" alignment="TOP_RIGHT" prefHeight="118.0" prefWidth="323.0">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </TextField>
+         </children>
+      </StackPane>
+      <HBox layoutY="113.0" prefHeight="311.0" prefWidth="323.0" spacing="10.0">
+         <children>
+            <Button fx:id="button7" mnemonicParsing="false" onAction="#seventhButton" prefHeight="60.0" prefWidth="60.0" text="7">
+               <HBox.margin>
+                  <Insets left="25.0" top="7.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="button8" mnemonicParsing="false" onAction="#eightButton" prefHeight="60.0" prefWidth="60.0" text="8">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin></Button>
+            <Button fx:id="button9" mnemonicParsing="false" onAction="#ninthButton" prefHeight="60.0" prefWidth="60.0" text="9">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin></Button>
+            <Button fx:id="buttonX" mnemonicParsing="false" onAction="#multButton" prefHeight="60.0" prefWidth="60.0" text="X">
+               <HBox.margin>
+                  <Insets top="7.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+       <HBox layoutY="190.0" prefHeight="236.0" prefWidth="323.0" spacing="10.0">
+           <children>
+               <Button fx:id="button4" mnemonicParsing="false" onAction="#forthButton" prefHeight="60.0" prefWidth="60.0" text="4">
+                   <HBox.margin>
+                       <Insets left="25.0" />
+                   </HBox.margin>
+               </Button>
+               <Button fx:id="button5" mnemonicParsing="false" onAction="#fifthButton" prefHeight="60.0" prefWidth="60.0" text="5" />
+               <Button fx:id="button6" mnemonicParsing="false" onAction="#sixButton" prefHeight="60.0" prefWidth="60.0" text="6" />
+               <Button fx:id="buttonWithMinus" mnemonicParsing="false" onAction="#minusButton" prefHeight="60.0" prefWidth="60.0" text="-" />
+           </children>
+       </HBox>
+       <HBox layoutY="260.0" prefHeight="139.0" prefWidth="323.0" spacing="10.0">
+           <children>
+               <Button fx:id="button1" mnemonicParsing="false" onAction="#firstbutton" prefHeight="60.0" prefWidth="60.0" text="1">
+                   <HBox.margin>
+                       <Insets left="25.0" />
+                   </HBox.margin>
+               </Button>
+               <Button fx:id="button2" mnemonicParsing="false" onAction="#secondButton" prefHeight="60.0" prefWidth="60.0" text="2" />
+               <Button fx:id="button3" mnemonicParsing="false" onAction="#thirdButton" prefHeight="60.0" prefWidth="60.0" text="3" />
+               <Button fx:id="buttonWithPlus" mnemonicParsing="false" onAction="#plusButton" prefHeight="60.0" prefWidth="60.0" text="+" />
+           </children>
+       </HBox>
+       <HBox layoutY="330.0" prefHeight="80.0" prefWidth="323.0" spacing="10.0">
+           <children>
+               <Button fx:id="button0" mnemonicParsing="false" onAction="#zeroButton" prefHeight="60.0" prefWidth="60.0" text="0">
+                   <HBox.margin>
+                       <Insets left="25.0" />
+                   </HBox.margin>
+               </Button>
+               <Button fx:id="buttonWithDot" mnemonicParsing="false" onAction="#dotButton" prefHeight="60.0" prefWidth="60.0" text="." />
+               <Button fx:id="buttonWithEqual" mnemonicParsing="false" onAction="#equalsButton" prefHeight="60.0" prefWidth="130.0" text="=" />
+           </children>
+       </HBox>
+   </children>
+</AnchorPane>
