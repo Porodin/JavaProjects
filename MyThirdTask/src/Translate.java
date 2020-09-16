@@ -7,7 +7,6 @@ import java.util.Map;
 public class Translate {
     public static void  main(String[] args) throws IOException {
         {
-
             Map<String, String> map = new HashMap<>();
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
@@ -22,7 +21,7 @@ public class Translate {
             map.put("облачно", "cloudy");
             map.put("холодно", "cold");
 
-            System.out.println("Введите ваше слово для перевода: ");
+            System.out.println("Введите вашe слово для перевода: ");
 
             String myWord = reader.readLine();
             for (String string : myWord.split(", ")) {
