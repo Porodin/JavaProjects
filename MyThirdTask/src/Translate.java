@@ -22,14 +22,14 @@ public class Translate {
             map.put("облачно", "cloudy");
             map.put("холодно", "cold");
 
-            System.out.println("Введите для ваше слово для перевода: ");
+            System.out.println("Введите ваше слово для перевода: ");
 
             String myWord = reader.readLine();
             for (String string : myWord.split(", ")) {
                 if (map.containsKey(string)){
-                    System.out.print("Перевод: " + map.get(string)+ "\n" + "");
+                    System.out.print("Перевод: " + map.get(string) + "\n" + "");
                 }else {
-                    System.out.println("Нет такого слова");
+                    System.out.println("Нет такого слова...");
                 }
             }
         }
